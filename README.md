@@ -6,6 +6,9 @@ personas en la web.
 A traves de la api de https://developers.themoviedb.org/3/getting-started/introduction. Consta de dos pantallas 
 observables por el usuario: la lista de peliculas(pantalla principal) y el detalle de la pelicula(pantalla detalle).
 
+![alt text](https://github.com/fedebarco/ListaPeliculas/blob/master/archivosAPK/pantallaprincipal.png)
+![alt text](https://github.com/fedebarco/ListaPeliculas/blob/master/archivosAPK/pantalladetalle.png)
+
 ----
 # INSTALACIÓN:
 
