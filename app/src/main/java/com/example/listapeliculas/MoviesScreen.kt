@@ -43,6 +43,7 @@ fun MoviesScreenCo(listmovie:List<ResultMovie>,onMovieChange: (NavState) -> Unit
         Text(text = "Tendencias", style = MaterialTheme.typography.h5)
         LazyVerticalGrid(
             columns = GridCells.Adaptive(minSize = 128.dp)
+
         ) {
             items(listmovie.size) { mo ->
                 MovieDetail(movire = listmovie[mo], index = mo, onMovieChange = onMovieChange)
@@ -55,7 +56,9 @@ fun MoviesScreenCo(listmovie:List<ResultMovie>,onMovieChange: (NavState) -> Unit
 
 @Composable
 fun MovieDetail(movire: ResultMovie, index:Int,onMovieChange: (NavState) -> Unit){
-    Column(modifier = Modifier.clickable { onMovieChange(NavState(true,index)) }) {
+    Column(modifier = Modifier.clickable { onMovieChange(NavState(true,index)) },
+        horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
         AsyncImage(model = "https://image.tmdb.org/t/p/w300${movire.posterPath}"
                 ,placeholder = painterResource(R.drawable.logomovie)
             ,contentDescription =null )
